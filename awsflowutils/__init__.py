@@ -8,3 +8,7 @@ It simplifies data access without handling credential management, making it a re
 
 
 __version__ = "1.0.0"
+
+from awsflowutils import boto, redshift, s3
+
+__all__ = ["boto", "redshift", "s3"]
