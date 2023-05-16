@@ -28,7 +28,7 @@ def test_read_sql_return_type():
 
 def test_read_sql_contents():
     # test whether contents of str returned by read_sql() are correct
-    test_str = "select\n     col1\n     col2\n from\n     pretend.first_table\n limit\n     1000;"
+    test_str = "select\n     col1\n     col2\n from\n     pretend.first_table\n limit\n     1000;\n"
     assert redshift.read_sql("tests/query.sql") == test_str
 
 
